@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+.gameBoard {
+  max-width: 1240px;
+  margin: 50px auto;
+  background: linear-gradient(45deg, #08253a, transparent);
+}
+.container {
+  display: flex;
+}
+
+.player1,
+.player2 {
+  width: 50%;
+  height: 500px;
+  position: relative;
+  text-align: center;
+}
+img {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  display: none;
+}
+.player1 img:last-of-type {
+  display: block;
+}
+
+.player2 img:last-of-type {
+  display: block;
+}
+.winner {
+  text-align: center;
+}
+button {
+  cursor: pointer;
+  display: block;
+  margin: 0px auto;
+  display: block;
+  padding: 30px 120px;
+  font-size: 36px;
+  border: 1px #936d6d solid;
+  color: darksalmon;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(36deg, #ab2406, #a7181800);
+}
+
+button:active {
+  background-color: chartreuse;
+}
